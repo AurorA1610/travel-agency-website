@@ -12,7 +12,7 @@ const Booking = () => {
 
     const [packageDetails, setPackageDetails] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${packageId}`).then(res => res.json()).then(data => setPackageDetails(data));
+        fetch(`https://chilling-castle-31521.herokuapp.com/packages/${packageId}`).then(res => res.json()).then(data => setPackageDetails(data));
     }, []);
 
     const onSubmit = data => {
@@ -23,7 +23,7 @@ const Booking = () => {
             destinations: packageDetails?.destinations,
             duration: packageDetails?.duration
         };
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://chilling-castle-31521.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

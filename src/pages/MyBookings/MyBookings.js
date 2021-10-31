@@ -9,7 +9,7 @@ const MyBookings = () => {
     const email = user?.email;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/bookings?email=${ email }`)
+        fetch(`https://chilling-castle-31521.herokuapp.com/bookings?email=${ email }`)
             .then(res => res.json())
             .then(data => {
                 setBookings(data);
@@ -20,7 +20,7 @@ const MyBookings = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure if you want to cancel this booking?");
         if(proceed) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://chilling-castle-31521.herokuapp.com/bookings/${id}`, {
             method: 'DELETE'
         }).then(res => res.json()).then(data => {
             if(data.deletedCount > 0) {

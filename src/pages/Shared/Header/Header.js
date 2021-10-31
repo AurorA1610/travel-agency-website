@@ -12,7 +12,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" sticky="top" variant="dark"  id="home" className="nav-bar">
                 <Container className="container-fluid">
                     <Navbar.Brand href="#home" className="float-start">
-                        <img height="100" width="100" src="https://i.ibb.co/j3Ftpqc/logo-removebg-preview.png" alt="" />
+                        <img height="100" width="100" src="https://i.ibb.co/yPmLQ9D/logo.png" alt="" />
                         <h4 className="text-secondary mt-2">Travel.com</h4>
                     </Navbar.Brand>
                     <Navbar.Toggle />
