@@ -1,0 +1,17 @@
+
+.package-header {
+    font-family: fantasy;
+    color: rgb(250, 104, 51);
+}
+
+#place-order-form {
+    background-image: linear-gradient(rgb(206, 224, 228), rgb(114, 131, 163));
+}
+#place-order-form h1{
+   font-family: serif;
+   color: rgb(85, 141, 29);
+}
+
+.place-order-form {
+    text-align: start;
+}

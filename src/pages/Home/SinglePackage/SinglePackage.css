@@ -1,0 +1,23 @@
+.singlePackage {
+    height: 250px;
+    background-image: linear-gradient(rgb(141, 90, 8), rgb(155, 107, 17));
+}
+
+.singlePackage h2 {
+    color: rgb(223, 218, 148);
+}
+
+.booking-link {
+    text-decoration: none;
+}
+.booking-button {
+    background-image: linear-gradient(rgb(243, 63, 93), rgb(179, 66, 85));
+    
+}
+
+/* mobile respinsiveness */
+@media only screen and (max-width:688px)  {
+    .service {
+        height: auto;
+    }
+}
